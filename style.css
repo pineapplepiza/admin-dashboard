@@ -19,11 +19,28 @@ body {
 }
 
 .top-links{
-    margin: 20px;
+    /* margin: 20px; */
+    font-weight: bold;
+}
+
+.bottom-links{
+    font-weight: bold;
+}
+
+.sidebar-img{
+    padding-top: 6px;
 }
 
 li{
-    /* ??? */
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+}
+
+img, li{
+    max-width: 37px;
+    max-height: 37px;
+    padding-right: 5px;
 }
 
 /*  */
@@ -37,15 +54,33 @@ li{
     grid-template-columns: 2fr 1fr;
 
     align-items: center;
+
+    padding: 5px;
 }
 
 .search-bar{
     grid-column-end: 2;
     padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    border-radius: 5px;
+    border: 3px solid #1fabfcc1;
 }
 
 .profile {
     grid-column-start: 2;
+}
+
+.welcome-message{
+    padding: 5px;
+}
+
+.welcome-bottom{
+    font-weight: bold;
+    font-size: large;
 }
 
 .but{
@@ -81,7 +116,9 @@ li{
     background-color: white;
     margin: 12px;
     border-radius: 10px;
-    max-width: 40%;
+    min-width: 42%;
+    min-height: 45%;
+    
 }
 
 .announcements {
@@ -98,4 +135,15 @@ li{
     margin: 12px;
     border-radius: 7px;
     padding: 5px;
+}
+
+.individual{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    /* padding-bottom: 5px; */
+}
+
+.trending-ind-userat{
+    font-weight: bold;
 }

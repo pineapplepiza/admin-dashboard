@@ -4,6 +4,8 @@ body {
     grid-template-rows: 1fr 4fr;
     
     min-height: 100vh;
+
+    margin: 0;
 }
 
 /*  */
@@ -16,6 +18,13 @@ body {
 
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 .top-links{
@@ -68,14 +77,19 @@ img, li{
 .search{
     border-radius: 5px;
     border: 3px solid #1fabfcc1;
+    min-width: 40vw;
 }
 
 .profile {
     grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .welcome-message{
     padding: 5px;
+    display: flex;
 }
 
 .welcome-bottom{
@@ -90,6 +104,16 @@ img, li{
     color: white;
 }
 
+.buttons{
+    justify-content: space-around;
+    display: flex;
+}
+
+.iconic{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 /*  */
 
 .main-content{
@@ -97,7 +121,7 @@ img, li{
 
     grid-template-columns: 3fr 1fr;
 
-    background-color:rgb(161, 165, 165);
+    background-color:rgb(195, 205, 205);
 
     grid-column-start: 2;
     grid-column-end: 3;
@@ -111,22 +135,34 @@ img, li{
     grid-column-end: 2;
 }
 
+h4{
+    min-width: 40vw;
+    height: 1fr;
+    padding-left: 10px;
+}
+
 .ind-project{
     padding: 15px;
     background-color: white;
     margin: 12px;
     border-radius: 10px;
     min-width: 42%;
-    min-height: 45%;
-    
+    min-height: 39%;
 }
 
 .announcements {
     grid-column-start: 2;
+}
+
+.ind-announcements{
     background-color: white;
     margin: 12px;
     border-radius: 7px;
     padding: 5px;
+}
+
+.title{
+    font-weight: bold;
 }
 
 .trending{
@@ -135,6 +171,10 @@ img, li{
     margin: 12px;
     border-radius: 7px;
     padding: 5px;
+}
+
+.trending-cont{
+    grid-column-start: 2;
 }
 
 .individual{

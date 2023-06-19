@@ -11,19 +11,21 @@
       <header class="header">
         
         <div class="search-bar">
-            <img src="../admin-dashboard/Pictures/search.png">
+            <img class="iconic" src="../admin-dashboard/Pictures/loupe.png">
             <input type="text" placeholder="Search.." class="search">
         </div>
         
         <div class="profile">
-            <btn></btn>
-            <btn></btn>
+            <input type="image" id="bell-pic" src="../admin-dashboard/Pictures/bell.png" />
+            <input type="image" id="profile-pic" src="../admin-dashboard/Pictures/russia.png" />
             <div>Vladmir Putin</div>
         </div>
         <div class="welcome-message">
-            <img src="../admin-dashboard/Pictures/hat.png">
-            <div>Hi there,</div>
-            <div class="welcome-bottom">Vladmit Putin (@ussrfanboy)</div>
+            <img class="iconic" src="../admin-dashboard/Pictures/cathedral-of-saint-basil.png">
+            <div class="welcome-text">
+                <div>Hi there,</div>
+                <div class="welcome-bottom">Vladmit Putin (@ussrfanboy)</div>
+            </div>
         </div>
         <div class="buttons">
             <btn class="but">New</btn>
@@ -33,7 +35,10 @@
     </header>
 
       <div class="sidebar">
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="../admin-dashboard/Pictures/dashboard.png">
+            <h3>Dashboard</h3>
+        </div>
         <div class="top-links">
             <ul>
                 <li>
@@ -82,6 +87,7 @@
 
       <div class="main-content">
         <div class="projects">
+            <h4>Your Projects</h4>
             <div class="ind-project">
                 <div class="proj-content">
                     <div class="proj-name">Ukraine Invasion 2022</div>
@@ -126,40 +132,57 @@
             </div>
         </div>
         <div class="announcements">
-            <div class="annocement-individual"></div>
-            <div class="annocement-individual"></div>
-            <div class="annocement-individual"></div>
-        </div>
-        <div class="trending">
-            <div class="individual">
-                <img src="../admin-dashboard/Pictures/china.png">
-                <div class="trending-text">
-                    <div class="trending-ind-userat" >@xi-xinping</div>
-                    <div>Taiwan Invasion</div>
-                </div> 
-            </div>
-            <div class="individual">
-                <img src="../admin-dashboard/Pictures/iran.png">
-                <div class="trending-text">
-                    <div class="trending-ind-userat" >@Iran</div>
-                    <div>Israel Invasion</div>
+            <h5>Announcements</h5>
+            <div class="ind-announcements" >
+                <div class="annocement-individual">
+                    <p class="title">Prigozhin Demads More Ammunition</p>
+                    <p class="announce-cont">Prigozhin very unhappy about lack of ammunition.</p>
                 </div>
-            </div>
-            <div class="individual">
-                <img src="../admin-dashboard/Pictures/north-korea.png">
-                <div class="trending-text">
-                    <div class="trending-ind-userat" >@Kimy</div>
-                    <div>Nukesss</div>
+                <div class="annocement-individual">
+                    <p class="title">China Suggests Peace in Ukraine</p>
+                    <p class="announce-cont">Xi may not be too happy with the war in Ukraine.</p>
                 </div>
-            </div>
-            <div class="individual">
-                <img src="../admin-dashboard/Pictures/india.png">
-                <div class="trending-text">
-                    <div class="trending-ind-userat" >@India</div>
-                    <div>Make Moeny From Everyone</div>
+                <div class="annocement-individual">
+                    <p class="title">India Wants More Cheap Oil</p>
+                    <p class="announce-cont">India doesn't care about anyone bsides themselves. </p>
                 </div>
             </div>
         </div>
+
+        <div class="trending-cont">
+            <h6>Trending</h6>
+            <div class="trending">
+                <div class="individual">
+                    <img src="../admin-dashboard/Pictures/china.png">
+                    <div class="trending-text">
+                        <div class="trending-ind-userat" >@xi-xinping</div>
+                        <div>Taiwan Invasion</div>
+                    </div> 
+                </div>
+                <div class="individual">
+                    <img src="../admin-dashboard/Pictures/iran.png">
+                    <div class="trending-text">
+                        <div class="trending-ind-userat" >@Iran</div>
+                        <div>Israel Invasion</div>
+                    </div>
+                </div>
+                <div class="individual">
+                    <img src="../admin-dashboard/Pictures/north-korea.png">
+                    <div class="trending-text">
+                        <div class="trending-ind-userat" >@Kimy</div>
+                        <div>Nukesss</div>
+                    </div>
+                </div>
+                <div class="individual">
+                    <img src="../admin-dashboard/Pictures/india.png">
+                    <div class="trending-text">
+                        <div class="trending-ind-userat" >@India</div>
+                        <div>Make Moeny From Everyone</div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
       </div>
 
     </body>

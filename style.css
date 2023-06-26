@@ -3,12 +3,12 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     
-    min-height: 100vh;
+    max-height: 100vh;
 
     margin: 0;
 }
 
-/*  */
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
 .sidebar{
     background-color: rgb(14, 197, 247);
@@ -52,7 +52,7 @@ img, li{
     padding-right: 5px;
 }
 
-/*  */
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
 .header {
     display: grid;
@@ -84,7 +84,12 @@ img, li{
     grid-column-start: 2;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding-right: 8px;
+    justify-content: flex-end;
+}
+
+.profile-ind {
+    margin-right: 28px;
 }
 
 .welcome-message{
@@ -102,11 +107,13 @@ img, li{
     background-color: rgb(41, 184, 255);
     padding: 10px;
     color: white;
+    margin-right: 8px;
 }
 
 .buttons{
-    justify-content: space-around;
+    justify-content: flex-end;
     display: flex;
+    padding-right: 8px;
 }
 
 .iconic{
@@ -114,17 +121,21 @@ img, li{
     padding-left: 10px;
 }
 
-/*  */
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
 .main-content{
     display: grid;
 
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50% 50%;
+    /* grid-template-columns: repeat(auto-fit, minmax(3fr, 1fr)); */
 
     background-color:rgb(195, 205, 205);
 
     grid-column-start: 2;
     grid-column-end: 3;
+
+    max-height: 90vh; /*  */
 
 }
 
@@ -133,6 +144,7 @@ img, li{
     flex-wrap: wrap;
 
     grid-column-end: 2;
+    max-height: 60vh; /*  */
 }
 
 h4{
@@ -146,12 +158,37 @@ h4{
     background-color: white;
     margin: 12px;
     border-radius: 10px;
-    min-width: 42%;
-    min-height: 39%;
+    width: clamp(40%, 42%, 100%);
+    min-height: 30%;
 }
+
+.proj-name{
+    font-weight: bold;
+    margin: 8px;
+}
+
+.proj-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px;
+}
+
+.ind-proj-btn{
+    margin-right: 3px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.announce-trending{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
 .announcements {
     grid-column-start: 2;
+    max-height: 40vh; /*  */
 }
 
 .ind-announcements{
@@ -166,22 +203,23 @@ h4{
 }
 
 .trending{
-    grid-column-start: 2;
+    /* grid-column-start: 2; */ /* took it out but doesn't change anything??? */
     background-color: white;
     margin: 12px;
     border-radius: 7px;
     padding: 5px;
+    
 }
 
 .trending-cont{
     grid-column-start: 2;
+    max-height: fit-content; 
 }
 
 .individual{
     display: flex;
     flex-direction: row;
     padding: 5px;
-    /* padding-bottom: 5px; */
 }
 
 .trending-ind-userat{

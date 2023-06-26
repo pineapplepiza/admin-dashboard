@@ -28,7 +28,6 @@ body {
 }
 
 .top-links{
-    /* margin: 20px; */
     font-weight: bold;
 }
 
@@ -128,38 +127,38 @@ img, li{
 
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 50% 50%;
-    /* grid-template-columns: repeat(auto-fit, minmax(3fr, 1fr)); */
 
     background-color:rgb(195, 205, 205);
 
     grid-column-start: 2;
     grid-column-end: 3;
-
-    max-height: 90vh; /*  */
-
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-
-    grid-column-end: 2;
-    max-height: 60vh; /*  */
-}
-
-h4{
-    min-width: 40vw;
-    height: 1fr;
-    padding-left: 10px;
 }
 
 .ind-project{
-    padding: 15px;
     background-color: white;
-    margin: 12px;
     border-radius: 10px;
-    width: clamp(40%, 42%, 100%);
+
+    padding: 10px;
     min-height: 30%;
+
+    flex: 0 0 calc(50% - 40px); /* Two columns. Subtracting 40px since there is 10px padding and margin on each side. */
+    margin: 10px; /* Spacing between projects */
+}
+
+.project-header{
+    flex: 0 0 calc(100% - 10px); /* Full width */
+    padding-left: 10px;
+}
+
+@media screen and (orientation:portrait) {
+    .ind-project{
+        flex: 0 0 calc(100% - 40px); /* One column. Subtracting 40px since there is 10px padding and margin on each side. */
+    }
 }
 
 .proj-name{
@@ -186,9 +185,12 @@ h4{
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 
+h5{
+    padding-left: 10px;
+}
+
 .announcements {
     grid-column-start: 2;
-    max-height: 40vh; /*  */
 }
 
 .ind-announcements{
@@ -202,13 +204,17 @@ h4{
     font-weight: bold;
 }
 
+.announce-cont{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+
 .trending{
-    /* grid-column-start: 2; */ /* took it out but doesn't change anything??? */
     background-color: white;
     margin: 12px;
     border-radius: 7px;
     padding: 5px;
-    
 }
 
 .trending-cont{
@@ -225,3 +231,10 @@ h4{
 .trending-ind-userat{
     font-weight: bold;
 }
+
+/* 
+!!! Having problems with trending overflowing.
+!!! Right now I'm testing out to see if making announcements and tredning into one is better.
+!!! Need more practice towards keeping things in place, not stable placement. Have to take margin and padding into consideration.
+!!! Need more clarity if I should you padding or margin.
+*/
